@@ -7,6 +7,7 @@ A premium, responsive portfolio for Areeb Shah, built with semantic HTML, modern
 - Pearl, Deep Ink and Electric Blue visual system
 - Purpose-built mobile, tablet and desktop compositions
 - SADAT STORE flagship commerce case study
+- Live SADAT STORE portfolio demo linked from the featured project
 - Hero entrance, scroll reveal, staggered cards and marquee motion
 - Magnetic calls-to-action, pointer depth and subtle parallax
 - Keyboard-friendly mobile navigation and visible focus states
@@ -30,9 +31,8 @@ Then visit `http://localhost:4173`.
 - `script.js` — progressive enhancement for reveal, depth, navigation and active states
 - `_headers` and `_redirects` — Cloudflare Pages defaults
 
-## Before production launch
+## Production notes
 
 - Add the final custom domain and generate a domain-specific sitemap
 - Replace conceptual SADAT STORE visuals with approved production screenshots when available
-- Add verified live project URLs and business contact details
 - Run a final Lighthouse pass on the deployed URL

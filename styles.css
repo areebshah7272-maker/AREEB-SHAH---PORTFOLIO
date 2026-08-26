@@ -229,6 +229,8 @@ h2 span { color: var(--blue); }
 .project-copy h3 { font-size: clamp(54px, 5.2vw, 77px); line-height: .83; }
 .project-copy p { max-width: 480px; margin: 25px 0 0; color: var(--muted); font-size: 16px; line-height: 1.65; }
 .tag-row { margin-bottom: 25px; }
+.project-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; }
+.project-actions .button { min-height: 44px; padding: 12px 18px; }
 .text-link { display: inline-flex; align-items: center; gap: 40px; border-bottom: 1px solid var(--ink); padding-bottom: 7px; font-size: 13px; font-weight: 750; text-decoration: none; }
 .text-link span { color: var(--blue); font-size: 18px; }
 .project-visual { position: relative; min-height: 620px; display: grid; place-items: center; padding: 72px; overflow: hidden; background: radial-gradient(circle at 80% 15%, #326eff 0, #162e68 26%, #111522 60%, #0d0f15 100%); perspective: 1300px; }
