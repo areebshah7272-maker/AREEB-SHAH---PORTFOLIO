@@ -804,3 +804,8 @@ h2 span {
   box-shadow: 0 25px 60px rgba(0, 0, 0, .58), 0 0 25px rgba(92, 255, 125, .08);
 }
 .mobile-menu a { border-color: rgba(126, 255, 158, .13); }
+
+@media (max-width: 860px) {
+  body { background-attachment: scroll; }
+  .project-card:hover { transform: none; }
+}
