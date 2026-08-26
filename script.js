@@ -4,8 +4,9 @@ const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const revealElements = [...document.querySelectorAll('[data-reveal]')];
 
 document.querySelectorAll('[data-stagger]').forEach((group) => {
+  const staggerStep = group.classList.contains('project-grid') ? 240 : 180;
   group.querySelectorAll('[data-reveal]').forEach((item, index) => {
-    if (!item.dataset.delay) item.dataset.delay = String(index * 90);
+    if (!item.dataset.delay) item.dataset.delay = String(index * staggerStep);
   });
 });
 
