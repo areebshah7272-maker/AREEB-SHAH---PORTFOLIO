@@ -809,3 +809,34 @@ h2 span {
   body { background-attachment: scroll; }
   .project-card:hover { transform: none; }
 }
+
+
+/* Deliberate staggered card entrances ------------------------------------ */
+.js .project-card[data-reveal] {
+  transform: translateY(68px) scale(.965);
+  transition:
+    opacity 1.18s var(--ease),
+    transform 1.24s cubic-bezier(.16, .76, .2, 1),
+    border-color .45s var(--ease),
+    box-shadow .6s var(--ease),
+    filter .45s var(--ease);
+}
+.js .project-card[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.js .case-card[data-reveal],
+.js .services-grid article[data-reveal] {
+  transform: translateY(48px);
+  transition-duration: 1.08s;
+}
+.js .case-card[data-reveal].is-visible,
+.js .services-grid article[data-reveal].is-visible {
+  transform: translateY(0);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .js .project-card[data-reveal].is-visible:hover {
+    transform: translateY(-22px) scale(1.035) rotateX(2.25deg);
+  }
+}
